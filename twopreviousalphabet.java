@@ -7,10 +7,15 @@ public class twopreviousalphabet {
 
 	public static void main(String[] args) {
 		 String s= "CDEF";
-		 for(int i = 0;i<s.length();i++) {
-			 char c = s.charAt(i);
-			 Integer.parseInt(c);
+		 char c[]= s.toCharArray();
+		 String ans = "" ;
+
+		 for(int i = 0;i<c.length;i++) {
+			 ans = ans +(char)(c[i]-2);
+			 
 		 }
+		 System.out.println(ans);
 	}
+	
 
 }
